@@ -1,1 +1,4 @@
-<h1>Create</h1>
+@extends('layouts.admin')
+@section('content')
+<h>Create Users</h>
+@stop
