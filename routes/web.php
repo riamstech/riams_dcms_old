@@ -14,8 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
+Route::group(['middleware'=>'admin'], function() {
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('admin/users', 'AdminUsersController');
+    Route::resource('admin/users', 'AdminUsersController');
+});
+
+
+
+
+
