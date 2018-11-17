@@ -6,6 +6,7 @@ use App\User;
 use App\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\UsersRequest;
 
 class AdminUsersController extends Controller
 {
@@ -38,13 +39,10 @@ class AdminUsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UsersRequest $request)
     {
-       //
-
-       // $roles = Role::pluck('name','id')->all();
-        //return $request->all();
-        //return view('admin.users.store',compact('roles'));
+       User::create($request->all());
+        return redirect('/admin/users');
     }
 
     /**
