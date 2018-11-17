@@ -37,7 +37,9 @@ class AdminUsersController extends Controller
      */
     public function store(Request $request)
     {
-        return view('admin.users.store');
+       // return view('admin.users.store');
+
+        return $request->all();
     }
 
     /**
