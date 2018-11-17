@@ -72,6 +72,7 @@
                                         <td>{{$user->is_active == 1 ? 'Active' : 'Not Active' }}</td>
                                         <td>{{$user->created_at->diffForHumans()}}</td>
                                         <td>{{$user->updated_at->diffForHumans()}}</td>
+                                        <td><a href='{{route('users.edit',$user->id)}}' class='btn btn-primary'><i class='fa fa-angle-double-right'></i> Details</a></td>
 
 
                                     </tr>
