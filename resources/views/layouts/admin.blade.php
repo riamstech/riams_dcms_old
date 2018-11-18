@@ -354,13 +354,13 @@
 <!-- /#wrapper -->
 
 <!-- jQuery -->
-<script src="{{asset('js/libs.js')}}"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="{{asset('js/metisMenu.js')}}"></script>
-<script src="{{asset('js/sb-admin-2.js')}}"></script>
-<script src="{{asset('js/scripts.js')}}"></script>
+<script src="{{asset('js/libs/metisMenu.js')}}"></script>
+<script src="{{asset('js/libs/sb-admin-2.js')}}"></script>
+<script src="{{asset('js/libs/scripts.js')}}"></script>
 
 
 @yield('scripts')
